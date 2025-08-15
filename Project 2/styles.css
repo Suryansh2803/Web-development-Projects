@@ -1,0 +1,177 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0;            /* Light text */
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navcontainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+#navlist {
+    list-style: none;
+     /* display: flex;
+     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  */
+}
+
+#navlogo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navItems {
+    display: flex;
+    gap: 20px;
+}
+
+.navItems a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navItems a:hover {
+    color: #a0e8af;
+}
+
+/* Main Content Container */
+.containbox {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Diet Sections */
+.MorningDiet, .AfternoonDiet, .EveningDiet {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease-in-out;
+}
+
+.MorningDiet:hover,
+.AfternoonDiet:hover,
+.EveningDiet:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    color: #66ff99;
+    font-size: 1.6rem;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Images */
+.diet-image {
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.95rem;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navlist {
+        flex-direction: ROW;
+        gap: 1px;
+    }
+
+    .navItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navItems a {
+        margin: 5px 0;
+    }
+
+    .containbox {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    li {
+        font-size: 0.95rem;
+    }
+}
+.MorningDiet{
+    display: flex;
+    justify-content: space-between;
+}
+.AfternoonDiet{
+    display: flex;
+    justify-content: space-between;
+}
+.EveningDiet{
+    display: flex;
+    justify-content: space-between;
+}
+#navlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float:var(#121212); ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.MorningDiet{
+    height: 30vh;
+}
